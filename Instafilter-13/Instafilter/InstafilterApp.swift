@@ -11,7 +11,8 @@ import SwiftUI
 struct InstafilterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PropertyWrappersToStructs()
+//            ContentView()
         }
     }
 }
