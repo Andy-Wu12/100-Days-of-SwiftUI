@@ -52,10 +52,23 @@ struct CoreImageLesson: View {
         
         // Create Core Image context and Core Image filter
         let context = CIContext()
-        let currentFilter = CIFilter.sepiaTone()
+        let currentFilter = CIFilter.twirlDistortion()
         
-        currentFilter.inputImage = beginImage
-        currentFilter.intensity = 1
+        // Modern API usage
+//        currentFilter.inputImage = beginImage
+//        currentFilter.radius = 1000
+//        currentFilter.center = CGPoint(x: inputImage.size.width / 2, y: inputImage.size.height / 2)
+        
+        // Older API usage, which allows for setting values dynamically along with conditionally supporting only values that a filter supports
+        let amount = 1.0
+        
+        let inputKeys = currentFilter.inputKeys
+        
+        if inputKeys.contains(kCIInputIntensityKey) {
+            currentFilter.setValue(amount, forKey: kCIInputIntensityKey)
+        }
+        if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(amount * 200, forKey: kCIInputRadiusKey) }
+        if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(amount * 10, forKey: kCIInputScaleKey) }
         
         // get a CIImage from our filter or exit if that fails
         guard let outputImage = currentFilter.outputImage else { return }
