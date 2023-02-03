@@ -14,6 +14,7 @@
 		9251374A298B251600916591 /* PropertyWrappersToStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92513749298B251600916591 /* PropertyWrappersToStructs.swift */; };
 		9251374C298B544400916591 /* ConfirmDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251374B298B544400916591 /* ConfirmDialog.swift */; };
 		9251374E298B60DE00916591 /* CoreImageLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251374D298B60DE00916591 /* CoreImageLesson.swift */; };
+		9251375C298CA4BF00916591 /* UIViewControllerInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251375B298CA4BF00916591 /* UIViewControllerInSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		92513749298B251600916591 /* PropertyWrappersToStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappersToStructs.swift; sourceTree = "<group>"; };
 		9251374B298B544400916591 /* ConfirmDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDialog.swift; sourceTree = "<group>"; };
 		9251374D298B60DE00916591 /* CoreImageLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageLesson.swift; sourceTree = "<group>"; };
+		9251375B298CA4BF00916591 /* UIViewControllerInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerInSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				92513749298B251600916591 /* PropertyWrappersToStructs.swift */,
 				9251374B298B544400916591 /* ConfirmDialog.swift */,
 				9251374D298B60DE00916591 /* CoreImageLesson.swift */,
+				9251375B298CA4BF00916591 /* UIViewControllerInSwiftUI.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				9251374A298B251600916591 /* PropertyWrappersToStructs.swift in Sources */,
 				9251374C298B544400916591 /* ConfirmDialog.swift in Sources */,
 				9251374E298B60DE00916591 /* CoreImageLesson.swift in Sources */,
+				9251375C298CA4BF00916591 /* UIViewControllerInSwiftUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
