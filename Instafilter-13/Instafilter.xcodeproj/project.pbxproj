@@ -15,6 +15,7 @@
 		9251374C298B544400916591 /* ConfirmDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251374B298B544400916591 /* ConfirmDialog.swift */; };
 		9251374E298B60DE00916591 /* CoreImageLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251374D298B60DE00916591 /* CoreImageLesson.swift */; };
 		9251375C298CA4BF00916591 /* UIViewControllerInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251375B298CA4BF00916591 /* UIViewControllerInSwiftUI.swift */; };
+		9251375E298E1A8500916591 /* Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251375D298E1A8500916591 /* Coordinators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		9251374B298B544400916591 /* ConfirmDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDialog.swift; sourceTree = "<group>"; };
 		9251374D298B60DE00916591 /* CoreImageLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageLesson.swift; sourceTree = "<group>"; };
 		9251375B298CA4BF00916591 /* UIViewControllerInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerInSwiftUI.swift; sourceTree = "<group>"; };
+		9251375D298E1A8500916591 /* Coordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				9251374B298B544400916591 /* ConfirmDialog.swift */,
 				9251374D298B60DE00916591 /* CoreImageLesson.swift */,
 				9251375B298CA4BF00916591 /* UIViewControllerInSwiftUI.swift */,
+				9251375D298E1A8500916591 /* Coordinators.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				925136EA298A262700916591 /* ContentView.swift in Sources */,
 				925136E8298A262700916591 /* InstafilterApp.swift in Sources */,
+				9251375E298E1A8500916591 /* Coordinators.swift in Sources */,
 				9251374A298B251600916591 /* PropertyWrappersToStructs.swift in Sources */,
 				9251374C298B544400916591 /* ConfirmDialog.swift in Sources */,
 				9251374E298B60DE00916591 /* CoreImageLesson.swift in Sources */,

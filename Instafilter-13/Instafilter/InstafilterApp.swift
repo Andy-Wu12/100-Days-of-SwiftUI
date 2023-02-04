@@ -11,7 +11,8 @@ import SwiftUI
 struct InstafilterApp: App {
     var body: some Scene {
         WindowGroup {
-            UIViewControllerInSwiftUI()
+            Coordinators()
+//            UIViewControllerInSwiftUI()
 //            CoreImageLesson()
 //            ConfirmDialog()
 //            PropertyWrappersToStructs()

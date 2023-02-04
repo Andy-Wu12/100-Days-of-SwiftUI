@@ -47,7 +47,7 @@ struct CoreImageLesson: View {
     }
     
     func loadImage() {
-        guard let inputImage = UIImage(named: "Bird") else { return }
+//        guard let inputImage = UIImage(named: "Bird") else { return }
 //        let beginImage = CIImage(image: inputImage)
         
         // Create Core Image context and Core Image filter
