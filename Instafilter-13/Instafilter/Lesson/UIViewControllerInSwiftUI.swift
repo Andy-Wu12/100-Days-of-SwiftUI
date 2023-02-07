@@ -38,7 +38,7 @@ struct UIViewControllerInSwiftUI: View {
             }
         }
         .sheet(isPresented: $showingPicker) {
-            ImagePicker()
+            ImagePickerLesson()
         }
     }
 }
@@ -47,7 +47,7 @@ struct UIViewControllerInSwiftUI: View {
  Wrapping UIKit view controller requires struct that conforms to
     UIViewControllerRepresentable
  */
-struct ImagePicker: UIViewControllerRepresentable {
+struct ImagePickerLesson: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> PHPickerViewController {
         var config = PHPickerConfiguration()
         config.filter = .images

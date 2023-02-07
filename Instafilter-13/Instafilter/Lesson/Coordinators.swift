@@ -29,7 +29,7 @@ struct Coordinators: View {
             }
         }
         .sheet(isPresented: $showingImagePicker) {
-            ImagePicker2(image: $inputImage)
+            ImagePickerLesson2(image: $inputImage)
         }
         .onChange(of: inputImage) { _ in loadImage() }
     }
@@ -37,10 +37,23 @@ struct Coordinators: View {
     func loadImage() {
         guard let inputImage = inputImage else { return }
         image = Image(uiImage: inputImage)
+        // https://www.hackingwithswift.com/books/ios-swiftui/how-to-save-images-to-the-users-photo-library
+        
+        // Parameters
+        // 1. image to save
+        // 2. object to notify about result
+        // 3. NAME of method on object in 2. that should be run
+        // 4. Context - provide any sort of data here and it will be passed back to us
+            // when our completion method is called.
+        // Refer to ImageSaver for 2, 3
+//        UIImageWriteToSavedPhotosAlbum(inputImage, nil, nil, nil)
+        
+        let imageSaver = ImageSaver()
+        imageSaver.writeToPhotoAlbum(image: inputImage)
     }
 }
 
-struct ImagePicker2: UIViewControllerRepresentable {
+struct ImagePickerLesson2: UIViewControllerRepresentable {
     @Binding var image: UIImage?
     
     /*
@@ -65,9 +78,9 @@ struct ImagePicker2: UIViewControllerRepresentable {
             }
         }
         
-        var parent: ImagePicker2
+        var parent: ImagePickerLesson2
         
-        init(_ parent: ImagePicker2) {
+        init(_ parent: ImagePickerLesson2) {
             self.parent = parent
         }
     }

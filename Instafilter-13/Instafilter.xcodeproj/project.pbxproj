@@ -16,6 +16,7 @@
 		9251374E298B60DE00916591 /* CoreImageLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251374D298B60DE00916591 /* CoreImageLesson.swift */; };
 		9251375C298CA4BF00916591 /* UIViewControllerInSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251375B298CA4BF00916591 /* UIViewControllerInSwiftUI.swift */; };
 		9251375E298E1A8500916591 /* Coordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9251375D298E1A8500916591 /* Coordinators.swift */; };
+		925C9C7E2991EC9700482187 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925C9C7D2991EC9700482187 /* ImageSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		9251374D298B60DE00916591 /* CoreImageLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageLesson.swift; sourceTree = "<group>"; };
 		9251375B298CA4BF00916591 /* UIViewControllerInSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerInSwiftUI.swift; sourceTree = "<group>"; };
 		9251375D298E1A8500916591 /* Coordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinators.swift; sourceTree = "<group>"; };
+		925C9C7D2991EC9700482187 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				9251374D298B60DE00916591 /* CoreImageLesson.swift */,
 				9251375B298CA4BF00916591 /* UIViewControllerInSwiftUI.swift */,
 				9251375D298E1A8500916591 /* Coordinators.swift */,
+				925C9C7D2991EC9700482187 /* ImageSaver.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				9251374C298B544400916591 /* ConfirmDialog.swift in Sources */,
 				9251374E298B60DE00916591 /* CoreImageLesson.swift in Sources */,
 				9251375C298CA4BF00916591 /* UIViewControllerInSwiftUI.swift in Sources */,
+				925C9C7E2991EC9700482187 /* ImageSaver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +302,7 @@
 				DEVELOPMENT_TEAM = WSQUG76UX4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save filtered photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -330,6 +335,7 @@
 				DEVELOPMENT_TEAM = WSQUG76UX4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save filtered photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
