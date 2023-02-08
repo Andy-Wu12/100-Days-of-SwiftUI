@@ -16,9 +16,12 @@ struct ContentView: View {
     @State private var filterIntensity = 0.5
     @State private var showingImagePicker = false
     
-    @State private var currentFilter = CIFilter.sepiaTone()
+    // Explicit CIFIlter here allows us to change filter dynamically
+    // Without it, the inferred type would be CIFilter that conforms to CISepiaTone
+    @State private var currentFilter: CIFilter = CIFilter.sepiaTone()
     // contexts are expensive to create, so best to create once and keep alive
         // if intending to render many images
+    @State private var showingFilterSheet = false
     let context = CIContext()
     
     var body: some View {
@@ -51,7 +54,7 @@ struct ContentView: View {
                 
                 HStack {
                     Button("Change filter") {
-                        // change filter
+                        showingFilterSheet = true
                     }
                     
                     Spacer()
@@ -65,6 +68,16 @@ struct ContentView: View {
         .onChange(of: inputImage) { _ in loadImage() }
         .sheet(isPresented: $showingImagePicker) {
             ImagePicker(image: $inputImage)
+        }
+        .confirmationDialog("Select a filter", isPresented: $showingFilterSheet) {
+            Button("Crystallize") { setFilter(CIFilter.crystallize()) }
+            Button("Edges") { setFilter(CIFilter.edges()) }
+            Button("Gaussian Blur") { setFilter(CIFilter.gaussianBlur()) }
+            Button("Pixellate") { setFilter(CIFilter.pixellate()) }
+            Button("Sepia Tone") { setFilter(CIFilter.sepiaTone()) }
+            Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask()) }
+            Button("Vignette") { setFilter(CIFilter.vignette()) }
+            Button("Cancel", role: .cancel) { }
         }
     }
     
@@ -81,7 +94,9 @@ struct ContentView: View {
     }
     
     func applyProcessing() {
-        currentFilter.intensity = Float(filterIntensity)
+        // We lose access to intensity due to explicit CIFilter annotation above
+//        currentFilter.intensity = Float(filterIntensity)
+        currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey)
         
         guard let outputImage = currentFilter.outputImage else { return }
         
@@ -89,6 +104,11 @@ struct ContentView: View {
             let uiImage = UIImage(cgImage: cgimg)
             image = Image(uiImage: uiImage)
         }
+    }
+    
+    func setFilter(_ filter: CIFilter) {
+        currentFilter = filter
+        loadImage()
     }
 }
 
