@@ -15,13 +15,13 @@ struct ContentView: View {
     
     @State private var filterIntensity = 0.5
     @State private var showingImagePicker = false
-    
     // Explicit CIFIlter here allows us to change filter dynamically
     // Without it, the inferred type would be CIFilter that conforms to CISepiaTone
     @State private var currentFilter: CIFilter = CIFilter.sepiaTone()
     // contexts are expensive to create, so best to create once and keep alive
         // if intending to render many images
     @State private var showingFilterSheet = false
+    @State private var processedImage: UIImage?
     let context = CIContext()
     
     var body: some View {
@@ -82,7 +82,17 @@ struct ContentView: View {
     }
     
     func save() {
-
+        guard let processedImage = processedImage else { return }
+        
+        let imageSaver = ImageSaver()
+        
+        imageSaver.successHandler = {
+            print("Success!")
+        }
+        imageSaver.errorHandler = {
+            print("Error! \($0.localizedDescription)")
+        }
+        imageSaver.writeToPhotoAlbum(image: processedImage)
     }
     
     func loadImage() {
@@ -107,6 +117,7 @@ struct ContentView: View {
         if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
             let uiImage = UIImage(cgImage: cgimg)
             image = Image(uiImage: uiImage)
+            processedImage = uiImage
         }
     }
     

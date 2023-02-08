@@ -8,6 +8,9 @@
 import SwiftUI
 
 class ImageSaver: NSObject {
+    var successHandler: (() -> Void)?
+    var errorHandler: ((Error) -> Void)?
+    
     func writeToPhotoAlbum(image: UIImage) {
         // #selector is a special compiler directive that asks Swift to make sure the method name exists where we say
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(saveCompleted), nil)
@@ -15,6 +18,10 @@ class ImageSaver: NSObject {
     
     // Marking this function @objc is required to generate code that can be read by Objective-C
     @objc func saveCompleted(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
-        print("Save finished")
+        if let error = error {
+            errorHandler?(error)
+        } else {
+            successHandler?()
+        }
     }
 }
