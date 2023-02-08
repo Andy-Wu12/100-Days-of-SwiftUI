@@ -60,6 +60,7 @@ struct ContentView: View {
                     Spacer()
                     
                     Button("save", action: save)
+                        .disabled(image == nil)
                 }
             }
             .padding([.horizontal, .bottom])
