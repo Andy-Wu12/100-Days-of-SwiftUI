@@ -14,6 +14,8 @@ struct ContentView: View {
     @State private var inputImage: UIImage?
     
     @State private var filterIntensity = 0.5
+    @State private var filterRadius = 1.0
+    @State private var filterScale = 1.0
     @State private var showingImagePicker = false
     // Explicit CIFIlter here allows us to change filter dynamically
     // Without it, the inferred type would be CIFilter that conforms to CISepiaTone
@@ -42,15 +44,12 @@ struct ContentView: View {
                 .onTapGesture {
                     showingImagePicker = true
                 }
+
+                FilterSlider(name: "Intensity", value: $filterIntensity, action: applyProcessing)
                 
-                HStack {
-                    Text("Intensity")
-                    Slider(value: $filterIntensity)
-                        .onChange(of: filterIntensity) { _ in
-                            applyProcessing()
-                        }
-                }
-                .padding(.vertical)
+                FilterSlider(name: "Radius", value: $filterRadius, action: applyProcessing)
+                
+                FilterSlider(name: "Scale", value: $filterScale, action: applyProcessing)
                 
                 HStack {
                     Button("Change filter") {
@@ -105,13 +104,20 @@ struct ContentView: View {
     }
     
     func applyProcessing() {
+//        print("""
+//            processing: \n
+//            intensity: \(filterIntensity) \n
+//            radius: \(filterRadius) \n
+//            scale: \(filterScale) \n
+//            """)
         // We lose access to intensity due to explicit CIFilter annotation above
 //        currentFilter.intensity = Float(filterIntensity)
         let inputKeys = currentFilter.inputKeys
         
+        // https://developer.apple.com/documentation/coreimage/cifilter/filter_parameter_keys
         if inputKeys.contains(kCIInputIntensityKey) { currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey) }
-        if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(filterIntensity, forKey: kCIInputRadiusKey) }
-        if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(filterIntensity, forKey: kCIInputScaleKey) }
+        if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(filterRadius, forKey: kCIInputRadiusKey) }
+        if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(filterScale, forKey: kCIInputScaleKey) }
         
         guard let outputImage = currentFilter.outputImage else { return }
         
@@ -125,6 +131,24 @@ struct ContentView: View {
     func setFilter(_ filter: CIFilter) {
         currentFilter = filter
         loadImage()
+    }
+}
+
+struct FilterSlider: View {
+    var name: String
+    var value: Binding<Double>
+    var action: (() -> Void)?
+    
+    var body: some View {
+        HStack {
+            Text(name)
+            Slider(value: value, in: 0...100)
+                .onChange(of: value.wrappedValue) { _ in
+//                    print(value.wrappedValue)
+                    action?()
+                }
+        }
+        .padding(.vertical)
     }
 }
 
