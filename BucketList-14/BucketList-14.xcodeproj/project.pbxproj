@@ -11,6 +11,8 @@
 		925C9C90299592F600482187 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925C9C8F299592F600482187 /* ContentView.swift */; };
 		925C9C92299592F900482187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925C9C91299592F900482187 /* Assets.xcassets */; };
 		925C9C95299592F900482187 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925C9C94299592F900482187 /* Preview Assets.xcassets */; };
+		925C9C9D2995B05600482187 /* ComparableUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925C9C9C2995B05600482187 /* ComparableUser.swift */; };
+		925C9C9F2995B57600482187 /* UsingCustomComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925C9C9E2995B57600482187 /* UsingCustomComparable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		925C9C8F299592F600482187 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		925C9C91299592F900482187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		925C9C94299592F900482187 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		925C9C9C2995B05600482187 /* ComparableUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableUser.swift; sourceTree = "<group>"; };
+		925C9C9E2995B57600482187 /* UsingCustomComparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingCustomComparable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		925C9C9B2995932F00482187 /* Lesson */ = {
 			isa = PBXGroup;
 			children = (
+				925C9C9C2995B05600482187 /* ComparableUser.swift */,
+				925C9C9E2995B57600482187 /* UsingCustomComparable.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -146,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				925C9C90299592F600482187 /* ContentView.swift in Sources */,
+				925C9C9F2995B57600482187 /* UsingCustomComparable.swift in Sources */,
+				925C9C9D2995B05600482187 /* ComparableUser.swift in Sources */,
 				925C9C8E299592F600482187 /* BucketList_14App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
