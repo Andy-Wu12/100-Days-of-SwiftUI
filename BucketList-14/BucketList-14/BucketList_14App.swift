@@ -11,7 +11,11 @@ import SwiftUI
 struct BucketList_14App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // Lessons
+//            FileManagerLessonView()
+            EnumViewStates()
+            // Project
+//            ContentView()
         }
     }
 }
