@@ -15,9 +15,10 @@ struct BucketList_14App: App {
 //            FileManagerLessonView()
 //            EnumViewStates()
 //            MapKitWithSwiftUI()
-            TouchAndFaceID()
+//            TouchAndFaceID()
+            
             // Project
-//            ContentView()
+            ContentView()
         }
     }
 }

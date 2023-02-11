@@ -17,6 +17,7 @@
 		925C9CA32995D21000482187 /* EnumViewStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925C9CA22995D21000482187 /* EnumViewStates.swift */; };
 		925C9CA52995D9C600482187 /* MapKitWithSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925C9CA42995D9C600482187 /* MapKitWithSwiftUI.swift */; };
 		925C9CA729974A8100482187 /* TouchAndFaceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925C9CA629974A8100482187 /* TouchAndFaceID.swift */; };
+		925C9CA9299817E900482187 /* MapLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925C9CA8299817E900482187 /* MapLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		925C9CA22995D21000482187 /* EnumViewStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumViewStates.swift; sourceTree = "<group>"; };
 		925C9CA42995D9C600482187 /* MapKitWithSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitWithSwiftUI.swift; sourceTree = "<group>"; };
 		925C9CA629974A8100482187 /* TouchAndFaceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchAndFaceID.swift; sourceTree = "<group>"; };
+		925C9CA8299817E900482187 /* MapLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		925C9C81299592F600482187 = {
 			isa = PBXGroup;
 			children = (
+				925C9CA8299817E900482187 /* MapLocation.swift */,
 				925C9C9B2995932F00482187 /* Lesson */,
 				925C9C8C299592F600482187 /* BucketList-14 */,
 				925C9C8B299592F600482187 /* Products */,
@@ -167,6 +170,7 @@
 				925C9CA729974A8100482187 /* TouchAndFaceID.swift in Sources */,
 				925C9C90299592F600482187 /* ContentView.swift in Sources */,
 				925C9C9F2995B57600482187 /* UsingCustomComparable.swift in Sources */,
+				925C9CA9299817E900482187 /* MapLocation.swift in Sources */,
 				925C9C9D2995B05600482187 /* ComparableUser.swift in Sources */,
 				925C9CA32995D21000482187 /* EnumViewStates.swift in Sources */,
 				925C9C8E299592F600482187 /* BucketList_14App.swift in Sources */,
