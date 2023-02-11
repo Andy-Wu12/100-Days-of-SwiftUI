@@ -14,7 +14,8 @@ struct BucketList_14App: App {
             // Lessons
 //            FileManagerLessonView()
 //            EnumViewStates()
-            MapKitWithSwiftUI()
+//            MapKitWithSwiftUI()
+            TouchAndFaceID()
             // Project
 //            ContentView()
         }
