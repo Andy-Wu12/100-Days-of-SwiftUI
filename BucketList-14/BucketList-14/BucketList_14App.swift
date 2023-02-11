@@ -13,7 +13,8 @@ struct BucketList_14App: App {
         WindowGroup {
             // Lessons
 //            FileManagerLessonView()
-            EnumViewStates()
+//            EnumViewStates()
+            MapKitWithSwiftUI()
             // Project
 //            ContentView()
         }
