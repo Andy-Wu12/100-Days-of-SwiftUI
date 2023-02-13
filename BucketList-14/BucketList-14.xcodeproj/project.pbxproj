@@ -74,15 +74,13 @@
 		925C9C8C299592F600482187 /* BucketList-14 */ = {
 			isa = PBXGroup;
 			children = (
-				925C9CA8299817E900482187 /* MapLocation.swift */,
-				925C9CAA2998419B00482187 /* EditView.swift */,
+				926B416C299AF80E00E5EE61 /* util */,
+				926B416B299AF7FC00E5EE61 /* ViewModels */,
+				926B416A299AF7E900E5EE61 /* Views */,
+				926B4169299AF7DA00E5EE61 /* Models */,
 				925C9C8D299592F600482187 /* BucketList_14App.swift */,
-				925C9C8F299592F600482187 /* ContentView.swift */,
 				925C9C91299592F900482187 /* Assets.xcassets */,
 				925C9C93299592F900482187 /* Preview Content */,
-				926B41632999D9A100E5EE61 /* WikipediaResult.swift */,
-				926B4165299AD6EB00E5EE61 /* ContentView-ViewModel.swift */,
-				926B4167299AF27800E5EE61 /* FileManager-DocumentsDirectory.swift */,
 			);
 			path = "BucketList-14";
 			sourceTree = "<group>";
@@ -106,6 +104,40 @@
 				925C9CA629974A8100482187 /* TouchAndFaceID.swift */,
 			);
 			path = Lesson;
+			sourceTree = "<group>";
+		};
+		926B4169299AF7DA00E5EE61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				926B41632999D9A100E5EE61 /* WikipediaResult.swift */,
+				925C9CA8299817E900482187 /* MapLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		926B416A299AF7E900E5EE61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				925C9CAA2998419B00482187 /* EditView.swift */,
+				925C9C8F299592F600482187 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		926B416B299AF7FC00E5EE61 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				926B4165299AD6EB00E5EE61 /* ContentView-ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		926B416C299AF80E00E5EE61 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				926B4167299AF27800E5EE61 /* FileManager-DocumentsDirectory.swift */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
