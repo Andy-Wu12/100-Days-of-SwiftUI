@@ -6,6 +6,7 @@
 //
 
 import MapKit
+import LocalAuthentication
 
 /*
  MVVM stands for Model View View-Model.
@@ -29,6 +30,7 @@ extension ContentView {
         // Only this class can WRITE locations
         @Published private(set) var locations: [MapLocation]
         @Published var selectedPlace: MapLocation?
+        @Published var isUnlocked = false
         
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
         
@@ -64,6 +66,38 @@ extension ContentView {
                 try data.write(to: savePath, options: [.atomic, .completeFileProtection])
             } catch {
                 print("Unable to save data.")
+            }
+        }
+        
+        func authenticate() {
+            let context = LAContext()
+            var error: NSError?
+            
+            if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+                let reason = "Authenticate yourself to unlock your saved locations"
+                
+                context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenticationError in
+                    if success {
+                        // Need this to run on Main Actor to make it safe for UI updates
+//                        self.isUnlocked = true
+                        
+                        // Start a new background task then immediately use that task
+                        // to queue up some owrk on the main actor
+                        Task {
+                            // This bounces to a background task, then back to the main actor
+//                            await MainActor.run {
+                            
+                            // This immediately runs the new tasks on the main actor
+                            Task { @MainActor in
+                                self.isUnlocked = true
+                            }
+                        }
+                    } else {
+                        // error
+                    }
+                }
+            } else {
+                // no biometrics
             }
         }
     }
