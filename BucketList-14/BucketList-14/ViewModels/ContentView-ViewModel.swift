@@ -32,6 +32,9 @@ extension ContentView {
         @Published var selectedPlace: MapLocation?
         @Published var isUnlocked = false
         
+        @Published var errorMessage = ""
+        @Published var showError = false
+        
         let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedPlaces")
         
         init() {
@@ -94,11 +97,21 @@ extension ContentView {
                         }
                     } else {
                         // error
+                        Task { @MainActor in
+                            self.errorMessage = "Error occurred during authentication."
+                            self.showError = true
+                        }
                     }
                 }
             } else {
-                // no biometrics
+                // no biometrics - good to add alternative authentication scheme
+                self.errorMessage = "FaceID is not enabled for this application."
+                self.showError = true
             }
+        }
+        
+        func hideError() {
+            self.showError = false
         }
     }
 }

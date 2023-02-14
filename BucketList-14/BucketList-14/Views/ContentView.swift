@@ -72,6 +72,11 @@ struct ContentView: View {
                 viewModel.update(location: newLocation)
             }
         }
+        .alert(viewModel.errorMessage, isPresented: $viewModel.showError) {
+            Button("OK") {
+                viewModel.hideError()
+            }
+        }
     }
 }
 
