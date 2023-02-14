@@ -22,6 +22,7 @@
 		926B41642999D9A100E5EE61 /* WikipediaResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B41632999D9A100E5EE61 /* WikipediaResult.swift */; };
 		926B4166299AD6EB00E5EE61 /* ContentView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B4165299AD6EB00E5EE61 /* ContentView-ViewModel.swift */; };
 		926B4168299AF27800E5EE61 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B4167299AF27800E5EE61 /* FileManager-DocumentsDirectory.swift */; };
+		926B416E299C2C0600E5EE61 /* EditView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B416D299C2C0600E5EE61 /* EditView-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		926B41632999D9A100E5EE61 /* WikipediaResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaResult.swift; sourceTree = "<group>"; };
 		926B4165299AD6EB00E5EE61 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
 		926B4167299AF27800E5EE61 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
+		926B416D299C2C0600E5EE61 /* EditView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EditView-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				926B4165299AD6EB00E5EE61 /* ContentView-ViewModel.swift */,
+				926B416D299C2C0600E5EE61 /* EditView-ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				925C9CA52995D9C600482187 /* MapKitWithSwiftUI.swift in Sources */,
 				926B4166299AD6EB00E5EE61 /* ContentView-ViewModel.swift in Sources */,
 				925C9CA729974A8100482187 /* TouchAndFaceID.swift in Sources */,
+				926B416E299C2C0600E5EE61 /* EditView-ViewModel.swift in Sources */,
 				925C9C90299592F600482187 /* ContentView.swift in Sources */,
 				926B41642999D9A100E5EE61 /* WikipediaResult.swift in Sources */,
 				925C9C9F2995B57600482187 /* UsingCustomComparable.swift in Sources */,
