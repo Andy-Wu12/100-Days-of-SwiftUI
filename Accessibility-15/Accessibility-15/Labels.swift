@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LabelsView: View {
     // VoiceOVer reads out the filenames by default.
     // This is undesirable when our names are like below
       // but we also cannot just rename every file to make it more descriptive
@@ -52,8 +52,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LabelsView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LabelsView()
     }
 }

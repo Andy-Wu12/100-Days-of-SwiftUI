@@ -11,7 +11,8 @@ import SwiftUI
 struct Accessibility_15App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            LabelsView()
+            HidingAndGrouping()
         }
     }
 }

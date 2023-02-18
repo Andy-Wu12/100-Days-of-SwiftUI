@@ -11,6 +11,7 @@
 		926B41CB29A05F5800E5EE61 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B41CA29A05F5800E5EE61 /* Labels.swift */; };
 		926B41CD29A05F5B00E5EE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926B41CC29A05F5B00E5EE61 /* Assets.xcassets */; };
 		926B41D029A05F5B00E5EE61 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926B41CF29A05F5B00E5EE61 /* Preview Assets.xcassets */; };
+		926B41D729A0920900E5EE61 /* HidingAndGrouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B41D629A0920900E5EE61 /* HidingAndGrouping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		926B41CA29A05F5800E5EE61 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		926B41CC29A05F5B00E5EE61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		926B41CF29A05F5B00E5EE61 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		926B41D629A0920900E5EE61 /* HidingAndGrouping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidingAndGrouping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				926B41CA29A05F5800E5EE61 /* Labels.swift */,
 				926B41CC29A05F5B00E5EE61 /* Assets.xcassets */,
 				926B41CE29A05F5B00E5EE61 /* Preview Content */,
+				926B41D629A0920900E5EE61 /* HidingAndGrouping.swift */,
 			);
 			path = "Accessibility-15";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				926B41D729A0920900E5EE61 /* HidingAndGrouping.swift in Sources */,
 				926B41CB29A05F5800E5EE61 /* Labels.swift in Sources */,
 				926B41C929A05F5800E5EE61 /* Accessibility_15App.swift in Sources */,
 			);
