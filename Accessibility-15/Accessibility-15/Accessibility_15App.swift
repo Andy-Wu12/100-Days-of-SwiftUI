@@ -12,7 +12,8 @@ struct Accessibility_15App: App {
     var body: some Scene {
         WindowGroup {
 //            LabelsView()
-            HidingAndGrouping()
+//            HidingAndGrouping()
+            ControlValueVoiceover()
         }
     }
 }

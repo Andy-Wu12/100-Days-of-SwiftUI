@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9256DFA129A1E27400BAD1E6 /* ControlValueVoiceover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256DFA029A1E27400BAD1E6 /* ControlValueVoiceover.swift */; };
 		926B41C929A05F5800E5EE61 /* Accessibility_15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B41C829A05F5800E5EE61 /* Accessibility_15App.swift */; };
 		926B41CB29A05F5800E5EE61 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926B41CA29A05F5800E5EE61 /* Labels.swift */; };
 		926B41CD29A05F5B00E5EE61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926B41CC29A05F5B00E5EE61 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9256DFA029A1E27400BAD1E6 /* ControlValueVoiceover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlValueVoiceover.swift; sourceTree = "<group>"; };
 		926B41C529A05F5800E5EE61 /* Accessibility-15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accessibility-15.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		926B41C829A05F5800E5EE61 /* Accessibility_15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessibility_15App.swift; sourceTree = "<group>"; };
 		926B41CA29A05F5800E5EE61 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				926B41CC29A05F5B00E5EE61 /* Assets.xcassets */,
 				926B41CE29A05F5B00E5EE61 /* Preview Content */,
 				926B41D629A0920900E5EE61 /* HidingAndGrouping.swift */,
+				9256DFA029A1E27400BAD1E6 /* ControlValueVoiceover.swift */,
 			);
 			path = "Accessibility-15";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				926B41D729A0920900E5EE61 /* HidingAndGrouping.swift in Sources */,
 				926B41CB29A05F5800E5EE61 /* Labels.swift in Sources */,
+				9256DFA129A1E27400BAD1E6 /* ControlValueVoiceover.swift in Sources */,
 				926B41C929A05F5800E5EE61 /* Accessibility_15App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
