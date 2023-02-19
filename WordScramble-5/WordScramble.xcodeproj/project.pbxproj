@@ -20,9 +20,6 @@
 		920815512945985C0032F4E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		920815532945985F0032F4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		920815562945985F0032F4E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9208155D294598820032F4E8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9208155E294598B50032F4E8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		9208155F294598DE0032F4E8 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		92081560294674360032F4E8 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,9 +37,6 @@
 		920815432945985C0032F4E8 = {
 			isa = PBXGroup;
 			children = (
-				9208155F294598DE0032F4E8 /* LICENSE */,
-				9208155E294598B50032F4E8 /* .gitignore */,
-				9208155D294598820032F4E8 /* README.md */,
 				9208154E2945985C0032F4E8 /* WordScramble */,
 				9208154D2945985C0032F4E8 /* Products */,
 			);
