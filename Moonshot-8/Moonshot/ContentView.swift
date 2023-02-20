@@ -57,6 +57,7 @@ struct BadgeGridView: View {
                                 .scaledToFit()
                                 .frame(width: 100, height: 100)
                                 .padding()
+                                .accessibilityHidden(true)
                             
                             VStack {
                                 Text(mission.displayName)
@@ -65,6 +66,8 @@ struct BadgeGridView: View {
                                 Text(mission.formattedLaunchDate)
                                     .font(.caption)
                                     .foregroundColor(.white.opacity(0.5))
+                                    .accessibilityLabel("Launch Date")
+                                    .accessibilityValue(mission.formattedLaunchDate == "N/A" ? "Not available": mission.formattedLaunchDate)
                             }
                             .padding(.vertical)
                             .frame(maxWidth: .infinity)
@@ -97,9 +100,12 @@ struct BadgeListView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 100, height: 100)
+                            .accessibilityHidden(true)
                         VStack {
                             /*@START_MENU_TOKEN@*/Text(mission.displayName)/*@END_MENU_TOKEN@*/
-                            Text(mission.formattedLaunchDate == "N/A" ? "" : mission.formattedLaunchDate)
+                            Text(mission.formattedLaunchDate)
+                                .accessibilityLabel("Launch Date")
+                                .accessibilityValue(mission.formattedLaunchDate == "N/A" ? "Not available": mission.formattedLaunchDate)
                         }
                         .padding(.horizontal)
                     }

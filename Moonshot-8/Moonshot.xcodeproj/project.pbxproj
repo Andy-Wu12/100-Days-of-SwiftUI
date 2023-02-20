@@ -14,9 +14,6 @@
 		92D7C09F294F9CAF00FBE0C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7C09E294F9CAF00FBE0C6 /* ContentView.swift */; };
 		92D7C0A1294F9CB200FBE0C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D7C0A0294F9CB200FBE0C6 /* Assets.xcassets */; };
 		92D7C0A4294F9CB200FBE0C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D7C0A3294F9CB200FBE0C6 /* Preview Assets.xcassets */; };
-		92D7C0AD294F9D1100FBE0C6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 92D7C0AA294F9D1000FBE0C6 /* README.md */; };
-		92D7C0AE294F9D1100FBE0C6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 92D7C0AB294F9D1000FBE0C6 /* .gitignore */; };
-		92D7C0AF294F9D1100FBE0C6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 92D7C0AC294F9D1000FBE0C6 /* LICENSE */; };
 		92D7C0B129500D9D00FBE0C6 /* GeometryReaderLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7C0B029500D9D00FBE0C6 /* GeometryReaderLesson.swift */; };
 		92D7C0B429500E5100FBE0C6 /* ScrollViewLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7C0B329500E5100FBE0C6 /* ScrollViewLesson.swift */; };
 		92D7C0B6295012F600FBE0C6 /* NavigationLinkLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D7C0B5295012F600FBE0C6 /* NavigationLinkLesson.swift */; };
@@ -39,9 +36,6 @@
 		92D7C09E294F9CAF00FBE0C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		92D7C0A0294F9CB200FBE0C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92D7C0A3294F9CB200FBE0C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		92D7C0AA294F9D1000FBE0C6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		92D7C0AB294F9D1000FBE0C6 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		92D7C0AC294F9D1000FBE0C6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		92D7C0B029500D9D00FBE0C6 /* GeometryReaderLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderLesson.swift; sourceTree = "<group>"; };
 		92D7C0B329500E5100FBE0C6 /* ScrollViewLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewLesson.swift; sourceTree = "<group>"; };
 		92D7C0B5295012F600FBE0C6 /* NavigationLinkLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkLesson.swift; sourceTree = "<group>"; };
@@ -69,9 +63,6 @@
 		92D7C090294F9CAF00FBE0C6 = {
 			isa = PBXGroup;
 			children = (
-				92D7C0AB294F9D1000FBE0C6 /* .gitignore */,
-				92D7C0AC294F9D1000FBE0C6 /* LICENSE */,
-				92D7C0AA294F9D1000FBE0C6 /* README.md */,
 				92EC7E2A295160B6001D64FC /* astronauts.json */,
 				92EC7E28295160AF001D64FC /* missions.json */,
 				92D7C09B294F9CAF00FBE0C6 /* Moonshot */,
@@ -184,13 +175,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92D7C0AE294F9D1100FBE0C6 /* .gitignore in Resources */,
-				92D7C0AD294F9D1100FBE0C6 /* README.md in Resources */,
 				92EC7E2B295160B6001D64FC /* astronauts.json in Resources */,
 				92D7C0A4294F9CB200FBE0C6 /* Preview Assets.xcassets in Resources */,
 				92D7C0A1294F9CB200FBE0C6 /* Assets.xcassets in Resources */,
 				92EC7E29295160AF001D64FC /* missions.json in Resources */,
-				92D7C0AF294F9D1100FBE0C6 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
