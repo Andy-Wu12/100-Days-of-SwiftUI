@@ -10,9 +10,6 @@
 		920C22BB29720D0400C7C397 /* BookwormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C22BA29720D0400C7C397 /* BookwormApp.swift */; };
 		920C22BF29720D0600C7C397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920C22BE29720D0600C7C397 /* Assets.xcassets */; };
 		920C22C229720D0600C7C397 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 920C22C129720D0600C7C397 /* Preview Assets.xcassets */; };
-		920C22CB29720DEE00C7C397 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 920C22C829720DEE00C7C397 /* README.md */; };
-		920C22CC29720DEE00C7C397 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 920C22C929720DEE00C7C397 /* .gitignore */; };
-		920C22CD29720DEE00C7C397 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 920C22CA29720DEE00C7C397 /* LICENSE */; };
 		920C22D029720EE200C7C397 /* ComponentWithBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C22CF29720EE200C7C397 /* ComponentWithBinding.swift */; };
 		920C22D22972601A00C7C397 /* TextEditorLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C22D12972601A00C7C397 /* TextEditorLesson.swift */; };
 		920C22D42973610C00C7C397 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920C22D32973610C00C7C397 /* DataController.swift */; };
@@ -30,9 +27,6 @@
 		920C22BA29720D0400C7C397 /* BookwormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormApp.swift; sourceTree = "<group>"; };
 		920C22BE29720D0600C7C397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		920C22C129720D0600C7C397 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		920C22C829720DEE00C7C397 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		920C22C929720DEE00C7C397 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		920C22CA29720DEE00C7C397 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		920C22CF29720EE200C7C397 /* ComponentWithBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentWithBinding.swift; sourceTree = "<group>"; };
 		920C22D12972601A00C7C397 /* TextEditorLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorLesson.swift; sourceTree = "<group>"; };
 		920C22D32973610C00C7C397 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
@@ -59,9 +53,6 @@
 		920C22AE29720D0400C7C397 = {
 			isa = PBXGroup;
 			children = (
-				920C22C929720DEE00C7C397 /* .gitignore */,
-				920C22CA29720DEE00C7C397 /* LICENSE */,
-				920C22C829720DEE00C7C397 /* README.md */,
 				920C22B929720D0400C7C397 /* Bookworm */,
 				920C22B829720D0400C7C397 /* Products */,
 			);
@@ -169,11 +160,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				920C22CC29720DEE00C7C397 /* .gitignore in Resources */,
-				920C22CB29720DEE00C7C397 /* README.md in Resources */,
 				920C22C229720D0600C7C397 /* Preview Assets.xcassets in Resources */,
 				920C22BF29720D0600C7C397 /* Assets.xcassets in Resources */,
-				920C22CD29720DEE00C7C397 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
