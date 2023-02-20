@@ -58,6 +58,9 @@ struct ExpenseTypeSection: View {
                     ExpenseItemPrice(item: item)
                     
                 }
+                .accessibilityElement()
+                .accessibilityHint("Expense Item")
+                .accessibilityValue("Spent \(item.amount, specifier: "%.2f") on \(item.name)")
             }
             .onDelete(perform: removeItems)
         } header: {
