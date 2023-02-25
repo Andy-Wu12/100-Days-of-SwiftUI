@@ -11,6 +11,7 @@
 		9256DFB129A47FFD00BAD1E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9256DFB029A47FFD00BAD1E6 /* ContentView.swift */; };
 		9256DFB329A4800100BAD1E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9256DFB229A4800100BAD1E6 /* Assets.xcassets */; };
 		9256DFB629A4800100BAD1E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9256DFB529A4800100BAD1E6 /* Preview Assets.xcassets */; };
+		925F42F529AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42F429AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		9256DFB029A47FFD00BAD1E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9256DFB229A4800100BAD1E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9256DFB529A4800100BAD1E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		925F42F429AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomValuesFromEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		9256DFBC29A4805300BAD1E6 /* Lesson */ = {
 			isa = PBXGroup;
 			children = (
+				925F42F429AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925F42F529AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift in Sources */,
 				9256DFB129A47FFD00BAD1E6 /* ContentView.swift in Sources */,
 				9256DFAF29A47FFD00BAD1E6 /* HotProspects_16App.swift in Sources */,
 			);
