@@ -14,6 +14,7 @@
 		925F42F529AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42F429AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift */; };
 		925F42F729AA970900306CE7 /* TabViewLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42F629AA970900306CE7 /* TabViewLesson.swift */; };
 		925F42F929AAA0C400306CE7 /* Using_objectWillChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42F829AAA0C400306CE7 /* Using_objectWillChange.swift */; };
+		925F42FB29AB1D5600306CE7 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42FA29AB1D5600306CE7 /* ResultType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		925F42F429AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomValuesFromEnvironment.swift; sourceTree = "<group>"; };
 		925F42F629AA970900306CE7 /* TabViewLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewLesson.swift; sourceTree = "<group>"; };
 		925F42F829AAA0C400306CE7 /* Using_objectWillChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Using_objectWillChange.swift; sourceTree = "<group>"; };
+		925F42FA29AB1D5600306CE7 /* ResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				925F42F429AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift */,
 				925F42F629AA970900306CE7 /* TabViewLesson.swift */,
 				925F42F829AAA0C400306CE7 /* Using_objectWillChange.swift */,
+				925F42FA29AB1D5600306CE7 /* ResultType.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				925F42F529AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift in Sources */,
 				9256DFB129A47FFD00BAD1E6 /* ContentView.swift in Sources */,
 				925F42F929AAA0C400306CE7 /* Using_objectWillChange.swift in Sources */,
+				925F42FB29AB1D5600306CE7 /* ResultType.swift in Sources */,
 				9256DFAF29A47FFD00BAD1E6 /* HotProspects_16App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
