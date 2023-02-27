@@ -16,7 +16,8 @@ struct HotProspects_16App: App {
 //            Using_objectWillChange()
 //            ImageInterpolation()
 //            CustomRowSwipe()
-            ScheduleLocalNotifications()
+//            ScheduleLocalNotifications()
+            PackageDependencies()
         }
     }
 }
