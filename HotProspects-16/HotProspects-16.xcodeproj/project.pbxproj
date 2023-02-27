@@ -17,6 +17,8 @@
 		925F42FB29AB1D5600306CE7 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42FA29AB1D5600306CE7 /* ResultType.swift */; };
 		925F42FD29AC253300306CE7 /* ImageInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42FC29AC253300306CE7 /* ImageInterpolation.swift */; };
 		925F42FF29AC314500306CE7 /* CreatingContextMenus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42FE29AC314500306CE7 /* CreatingContextMenus.swift */; };
+		925F430129AC3E9800306CE7 /* CustomRowSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F430029AC3E9800306CE7 /* CustomRowSwipe.swift */; };
+		925F430329AC424900306CE7 /* ScheduleLocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F430229AC424900306CE7 /* ScheduleLocalNotifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		925F42FA29AB1D5600306CE7 /* ResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
 		925F42FC29AC253300306CE7 /* ImageInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolation.swift; sourceTree = "<group>"; };
 		925F42FE29AC314500306CE7 /* CreatingContextMenus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingContextMenus.swift; sourceTree = "<group>"; };
+		925F430029AC3E9800306CE7 /* CustomRowSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRowSwipe.swift; sourceTree = "<group>"; };
+		925F430229AC424900306CE7 /* ScheduleLocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleLocalNotifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				925F42FA29AB1D5600306CE7 /* ResultType.swift */,
 				925F42FC29AC253300306CE7 /* ImageInterpolation.swift */,
 				925F42FE29AC314500306CE7 /* CreatingContextMenus.swift */,
+				925F430029AC3E9800306CE7 /* CustomRowSwipe.swift */,
+				925F430229AC424900306CE7 /* ScheduleLocalNotifications.swift */,
 			);
 			path = Lesson;
 			sourceTree = "<group>";
@@ -163,11 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925F430329AC424900306CE7 /* ScheduleLocalNotifications.swift in Sources */,
 				925F42F729AA970900306CE7 /* TabViewLesson.swift in Sources */,
 				925F42F529AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift in Sources */,
 				9256DFB129A47FFD00BAD1E6 /* ContentView.swift in Sources */,
 				925F42F929AAA0C400306CE7 /* Using_objectWillChange.swift in Sources */,
 				925F42FD29AC253300306CE7 /* ImageInterpolation.swift in Sources */,
+				925F430129AC3E9800306CE7 /* CustomRowSwipe.swift in Sources */,
 				925F42FB29AB1D5600306CE7 /* ResultType.swift in Sources */,
 				9256DFAF29A47FFD00BAD1E6 /* HotProspects_16App.swift in Sources */,
 				925F42FF29AC314500306CE7 /* CreatingContextMenus.swift in Sources */,

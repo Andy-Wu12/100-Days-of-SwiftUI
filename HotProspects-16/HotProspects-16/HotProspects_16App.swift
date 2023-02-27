@@ -14,7 +14,9 @@ struct HotProspects_16App: App {
 //            ContentView()
 //            TabViewLesson()
 //            Using_objectWillChange()
-            ImageInterpolation()
+//            ImageInterpolation()
+//            CustomRowSwipe()
+            ScheduleLocalNotifications()
         }
     }
 }
