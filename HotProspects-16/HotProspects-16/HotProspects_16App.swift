@@ -13,7 +13,8 @@ struct HotProspects_16App: App {
         WindowGroup {
 //            ContentView()
 //            TabViewLesson()
-            Using_objectWillChange()
+//            Using_objectWillChange()
+            ImageInterpolation()
         }
     }
 }
