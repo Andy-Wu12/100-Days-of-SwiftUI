@@ -13,6 +13,7 @@
 		9256DFB629A4800100BAD1E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9256DFB529A4800100BAD1E6 /* Preview Assets.xcassets */; };
 		9258F88A29AD8E5800B3F49C /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258F88929AD8E5800B3F49C /* ProspectsView.swift */; };
 		9258F88C29AD8E6200B3F49C /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258F88B29AD8E6200B3F49C /* MeView.swift */; };
+		9258F88F29AD920700B3F49C /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258F88E29AD920700B3F49C /* Prospect.swift */; };
 		925F42F529AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42F429AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift */; };
 		925F42F729AA970900306CE7 /* TabViewLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42F629AA970900306CE7 /* TabViewLesson.swift */; };
 		925F42F929AAA0C400306CE7 /* Using_objectWillChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42F829AAA0C400306CE7 /* Using_objectWillChange.swift */; };
@@ -33,6 +34,7 @@
 		9256DFB529A4800100BAD1E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9258F88929AD8E5800B3F49C /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		9258F88B29AD8E6200B3F49C /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		9258F88E29AD920700B3F49C /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		925F42F429AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomValuesFromEnvironment.swift; sourceTree = "<group>"; };
 		925F42F629AA970900306CE7 /* TabViewLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewLesson.swift; sourceTree = "<group>"; };
 		925F42F829AAA0C400306CE7 /* Using_objectWillChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Using_objectWillChange.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		9256DFAD29A47FFD00BAD1E6 /* HotProspects-16 */ = {
 			isa = PBXGroup;
 			children = (
+				9258F88D29AD91F800B3F49C /* Models */,
 				9256DFBC29A4805300BAD1E6 /* Lesson */,
 				9256DFAE29A47FFD00BAD1E6 /* HotProspects_16App.swift */,
 				9256DFB029A47FFD00BAD1E6 /* ContentView.swift */,
@@ -108,6 +111,14 @@
 				925F430729AC508700306CE7 /* PackageDependencies.swift */,
 			);
 			path = Lesson;
+			sourceTree = "<group>";
+		};
+		9258F88D29AD91F800B3F49C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9258F88E29AD920700B3F49C /* Prospect.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				9258F88A29AD8E5800B3F49C /* ProspectsView.swift in Sources */,
 				925F430329AC424900306CE7 /* ScheduleLocalNotifications.swift in Sources */,
 				925F42F729AA970900306CE7 /* TabViewLesson.swift in Sources */,
+				9258F88F29AD920700B3F49C /* Prospect.swift in Sources */,
 				925F42F529AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift in Sources */,
 				925F430829AC508700306CE7 /* PackageDependencies.swift in Sources */,
 				9256DFB129A47FFD00BAD1E6 /* ContentView.swift in Sources */,

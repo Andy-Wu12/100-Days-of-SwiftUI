@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProspectsView: View {
+    @EnvironmentObject var prospects: Prospects
+    
     enum FilterType {
         case none, contacted, uncontacted
     }
@@ -25,10 +27,39 @@ struct ProspectsView: View {
         }
     }
     
+    var filteredProspects: [Prospect] {
+        switch filter {
+        case .none:
+            return prospects.people
+        case .contacted:
+            return prospects.people.filter { $0.isContacted }
+        case .uncontacted:
+            return prospects.people.filter { !$0.isContacted }
+        }
+    }
+    
     var body: some View {
         NavigationView {
-            Text("Hello, World")
-                .navigationTitle(title)
+            List {
+                ForEach(filteredProspects) { prospect in
+                    VStack(alignment: .leading) {
+                        Text(prospect.name)
+                            .font(.headline)
+                        Text(prospect.emailAddress)
+                            .foregroundColor(.secondary)
+                    }
+                }
+            }
+            .toolbar {
+                Button {
+                    let prospect = Prospect()
+                    prospect.name = "Andy Wu"
+                    prospect.emailAddress = "awu@fakemail.com"
+                    prospects.people.append(prospect)
+                } label: {
+                    Label("Scan", systemImage: "qrcode.viewfinder")
+                }
+            }
         }
     }
 }
