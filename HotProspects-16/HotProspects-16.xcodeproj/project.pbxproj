@@ -15,6 +15,7 @@
 		9258F88C29AD8E6200B3F49C /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258F88B29AD8E6200B3F49C /* MeView.swift */; };
 		9258F88F29AD920700B3F49C /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258F88E29AD920700B3F49C /* Prospect.swift */; };
 		9258F89229ADABB600B3F49C /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 9258F89129ADABB600B3F49C /* CodeScanner */; };
+		9258F89429AEF1F100B3F49C /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9258F89329AEF1F100B3F49C /* ImageSaver.swift */; };
 		925F42F529AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42F429AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift */; };
 		925F42F729AA970900306CE7 /* TabViewLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42F629AA970900306CE7 /* TabViewLesson.swift */; };
 		925F42F929AAA0C400306CE7 /* Using_objectWillChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F42F829AAA0C400306CE7 /* Using_objectWillChange.swift */; };
@@ -36,6 +37,7 @@
 		9258F88929AD8E5800B3F49C /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		9258F88B29AD8E6200B3F49C /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		9258F88E29AD920700B3F49C /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		9258F89329AEF1F100B3F49C /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		925F42F429AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomValuesFromEnvironment.swift; sourceTree = "<group>"; };
 		925F42F629AA970900306CE7 /* TabViewLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewLesson.swift; sourceTree = "<group>"; };
 		925F42F829AAA0C400306CE7 /* Using_objectWillChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Using_objectWillChange.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				9258F88B29AD8E6200B3F49C /* MeView.swift */,
 				9256DFB229A4800100BAD1E6 /* Assets.xcassets */,
 				9256DFB429A4800100BAD1E6 /* Preview Content */,
+				9258F89329AEF1F100B3F49C /* ImageSaver.swift */,
 			);
 			path = "HotProspects-16";
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				925F42F529AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift in Sources */,
 				925F430829AC508700306CE7 /* PackageDependencies.swift in Sources */,
 				9256DFB129A47FFD00BAD1E6 /* ContentView.swift in Sources */,
+				9258F89429AEF1F100B3F49C /* ImageSaver.swift in Sources */,
 				925F42F929AAA0C400306CE7 /* Using_objectWillChange.swift in Sources */,
 				925F42FD29AC253300306CE7 /* ImageInterpolation.swift in Sources */,
 				925F430129AC3E9800306CE7 /* CustomRowSwipe.swift in Sources */,
@@ -347,6 +351,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "\"Need to scan QR Codes\"";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Saving QR Codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -377,6 +382,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "\"Need to scan QR Codes\"";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Saving QR Codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
