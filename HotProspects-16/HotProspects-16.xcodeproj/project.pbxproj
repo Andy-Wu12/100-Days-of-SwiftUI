@@ -26,6 +26,7 @@
 		925F430329AC424900306CE7 /* ScheduleLocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F430229AC424900306CE7 /* ScheduleLocalNotifications.swift */; };
 		925F430629AC4C6F00306CE7 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 925F430529AC4C6F00306CE7 /* SamplePackage */; };
 		925F430829AC508700306CE7 /* PackageDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925F430729AC508700306CE7 /* PackageDependencies.swift */; };
+		92E0E04929B44DF500D037D9 /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E0E04829B44DF500D037D9 /* FileUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		925F430029AC3E9800306CE7 /* CustomRowSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRowSwipe.swift; sourceTree = "<group>"; };
 		925F430229AC424900306CE7 /* ScheduleLocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleLocalNotifications.swift; sourceTree = "<group>"; };
 		925F430729AC508700306CE7 /* PackageDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageDependencies.swift; sourceTree = "<group>"; };
+		92E0E04829B44DF500D037D9 /* FileUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				9256DFB229A4800100BAD1E6 /* Assets.xcassets */,
 				9256DFB429A4800100BAD1E6 /* Preview Content */,
 				9258F89329AEF1F100B3F49C /* ImageSaver.swift */,
+				92E0E04829B44DF500D037D9 /* FileUtil.swift */,
 			);
 			path = "HotProspects-16";
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				925F42F529AA8DAA00306CE7 /* CustomValuesFromEnvironment.swift in Sources */,
 				925F430829AC508700306CE7 /* PackageDependencies.swift in Sources */,
 				9256DFB129A47FFD00BAD1E6 /* ContentView.swift in Sources */,
+				92E0E04929B44DF500D037D9 /* FileUtil.swift in Sources */,
 				9258F89429AEF1F100B3F49C /* ImageSaver.swift in Sources */,
 				925F42F929AAA0C400306CE7 /* Using_objectWillChange.swift in Sources */,
 				925F42FD29AC253300306CE7 /* ImageInterpolation.swift in Sources */,

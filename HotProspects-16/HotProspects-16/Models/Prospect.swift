@@ -21,19 +21,18 @@ class Prospect: Identifiable, Codable {
     let saveKey = "SavedData"
     
     init() {
-        if let data = UserDefaults.standard.data(forKey: saveKey) {
-            if let decoded = try? JSONDecoder().decode([Prospect].self, from: data) {
-                people = decoded
-                return
-            }
+        if let prospects: [Prospect] = try? readDocument(name: saveKey) {
+            people = prospects
+        } else {
+            people = []
         }
-        
-        people = []
     }
     
     private func save() {
-        if let encoded = try? JSONEncoder().encode(people) {
-            UserDefaults.standard.set(encoded, forKey: saveKey)
+        do {
+            try writeDocument(name: saveKey, for: people)
+        } catch {
+            return
         }
     }
     
