@@ -11,13 +11,19 @@ import UserNotifications
 import CodeScanner
 
 struct ProspectsView: View {
+    enum FilterType {
+        case none, contacted, uncontacted
+    }
+    
+    enum SortType {
+        case recent, name
+    }
     @EnvironmentObject var prospects: Prospects
     
     @State private var isShowingScanner = false
     
-    enum FilterType {
-        case none, contacted, uncontacted
-    }
+    @State private var sortingType: SortType = .recent
+    @State private var showingSortMenu = false
     
     let filter: FilterType
     
@@ -33,13 +39,21 @@ struct ProspectsView: View {
     }
     
     var filteredProspects: [Prospect] {
+        let peopleToDisplay: [Prospect]
         switch filter {
         case .none:
-            return prospects.people
+            peopleToDisplay = prospects.people
         case .contacted:
-            return prospects.people.filter { $0.isContacted }
+            peopleToDisplay = prospects.people.filter { $0.isContacted }
         case .uncontacted:
-            return prospects.people.filter { !$0.isContacted }
+            peopleToDisplay = prospects.people.filter { !$0.isContacted }
+        }
+        
+        switch sortingType {
+        case .recent:
+            return peopleToDisplay
+        case .name:
+            return peopleToDisplay.sorted { $0.name < $1.name }
         }
     }
     
@@ -84,10 +98,17 @@ struct ProspectsView: View {
                 }
             }
             .toolbar {
-                Button {
-                    isShowingScanner = true
-                } label: {
-                    Label("Scan", systemImage: "qrcode.viewfinder")
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        isShowingScanner = true
+                    } label: {
+                        Label("Scan", systemImage: "qrcode.viewfinder")
+                    }
+                }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button("Sort") {
+                        showingSortMenu = true
+                    }
                 }
             }
             .sheet(isPresented: $isShowingScanner) {
@@ -104,9 +125,19 @@ struct ProspectsView: View {
                 */
                 CodeScannerView(
                     codeTypes: [.qr],
-                    simulatedData: "Andy Wu\nawu@fakemail.com",
+                    simulatedData: "1211abBandy Wu\nawu@fakemail.com",
                     completion: handleScan)
                                 
+            }
+            .confirmationDialog("Sort People", isPresented: $showingSortMenu) {
+                Button("Recents (Default)") {
+                    sortingType = .recent
+                }
+                Button("Name") {
+                    sortingType = .name
+                }
+            } message: {
+                Text("Choose Sort Type")
             }
         }
     }
